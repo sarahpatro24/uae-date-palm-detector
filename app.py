@@ -3,8 +3,9 @@ import requests
 from PIL import Image, ImageDraw
 import io
 
-# CONFIG
-API_KEY = "eEdXUtNGshzr5pTDMeZ9"
+
+API_KEY = st.secrets["ROBOFLOW_API_KEY"]
+
 MODEL_ID = "uae_dat_palm"
 VERSION = "9"
 ENDPOINT = f"https://detect.roboflow.com/{MODEL_ID}/{VERSION}?api_key={API_KEY}"
